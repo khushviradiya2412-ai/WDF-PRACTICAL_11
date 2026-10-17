@@ -1,0 +1,580 @@
+/* =========================================
+   STUDENT HUB PORTAL - SHARED STYLESHEET
+   Simple CSS for beginners to understand
+   ========================================= */
+
+/* --- RESET ---
+   Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- BODY ---
+   Basic page appearance */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* --- NAVIGATION BAR ---
+   Sticky top menu used on every page */
+.navbar {
+    background-color: #2c3e50;
+    padding: 12px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-item {
+    color: #cccccc;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.nav-item:hover {
+    background-color: #3d5166;
+    color: white;
+}
+
+.nav-item.active {
+    background-color: #3498db;
+    color: white;
+}
+
+/* --- HERO SECTION ---
+   Big banner at the top of a page */
+.hero {
+    background-color: #2c3e50;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #bdc3c7;
+    margin-bottom: 20px;
+}
+
+/* --- BUTTONS ---
+   Reusable button styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #2c3e50;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+/* --- SECTION TITLE --- */
+.section-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    padding-top: 30px;
+}
+
+/* --- CARD GRID ---
+   Flexible row of cards */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 24px;
+    width: 280px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 14px;
+}
+
+.card-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.card-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.card-btn:hover {
+    background-color: #2980b9;
+}
+
+/* --- STATS ROW --- */
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.stat-box {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px 30px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.stat-box h3 {
+    font-size: 28px;
+    color: #3498db;
+}
+
+.stat-box p {
+    font-size: 13px;
+    color: #666666;
+}
+
+/* --- FORMS ---
+   Labels and input fields */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* --- TABLE STYLES --- */
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* --- BADGE (Status labels) --- */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.badge-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.badge-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* --- PROGRESS BAR --- */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background-color: #3498db;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* --- WHITE SECTION BOX --- */
+.section-box {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #2c3e50;
+    color: #cccccc;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.footer-col h4 {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-col p,
+.footer-col a,
+.footer-col li a {
+    font-size: 13px;
+    color: #aaaaaa;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #3d5166;
+    font-size: 13px;
+    color: #888888;
+}
+
+/* --- ACCORDION (for FAQ page) ---
+   Expandable questions */
+.accordion-item {
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-btn {
+    width: 100%;
+    background-color: white;
+    border: none;
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-btn:hover {
+    background-color: #f0f4f8;
+}
+
+.accordion-answer {
+    display: none;
+    padding: 14px 16px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eeeeee;
+    font-size: 14px;
+    color: #555555;
+}
+
+.accordion-answer.open {
+    display: block;
+}
+
+/* --- TABS (for Admin page) ---
+   Tab buttons to switch panels */
+.tab-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background-color: #ecf0f1;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333333;
+}
+
+.tab-btn.active {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+/* --- PAGE HERO (for inner pages) --- */
+.page-hero {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.page-hero p {
+    font-size: 16px;
+    color: #bdc3c7;
+}
+
+/* --- CONTAINER --- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- LOGIN / REGISTER BOX ---
+   Centered form for login and register pages */
+.auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.auth-box {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 32px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.auth-box h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 6px;
+    color: #2c3e50;
+}
+
+.auth-box p {
+    text-align: center;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 24px;
+}
+
+.auth-box .btn {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 13px;
+    color: #555555;
+}
+
+.auth-footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* --- SMALL BUTTONS (for table actions) --- */
+.btn-sm {
+    padding: 5px 12px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.btn-sm-edit {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-sm-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* --- RESPONSIVE (phones and tablets) --- */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .card-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+    }
+
+    .auth-box {
+        padding: 20px;
+    }
+}
